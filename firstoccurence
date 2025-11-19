@@ -1,0 +1,10 @@
+class Solution:
+    def firstOccurence(self,txt,pat):
+        #code here
+        l=len(pat)
+        if pat in txt:
+            for i in range(len(txt)):
+                if txt[i:i+l]==pat:
+                    return i
+        else:
+            return -1

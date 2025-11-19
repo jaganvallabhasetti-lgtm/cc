@@ -1,0 +1,9 @@
+class Solution:
+    def getAlternates(self, arr):
+        # Code Here
+        l=len(arr)
+        temp=[]
+        for i in range(0,l,2):
+            temp.append(arr[i])
+        
+        return temp

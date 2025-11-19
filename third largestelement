@@ -1,0 +1,9 @@
+class Solution:
+    def thirdLargest(self,arr):
+        # code here
+        l=len(arr)
+        arr.sort()
+        res=arr[l-3]
+        if l<3:
+            res=-1
+        return res

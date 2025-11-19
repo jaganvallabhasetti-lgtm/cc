@@ -1,0 +1,11 @@
+class Solution:
+	def pushZerosToEnd(self, arr):
+    	# code here
+    	temp=[]
+    	for ele in arr:
+    	    if ele!=0:
+    	        temp.append(ele)
+    	return temp
+
+    	   
+    	        

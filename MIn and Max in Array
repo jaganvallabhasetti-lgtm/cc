@@ -1,0 +1,10 @@
+#User function Template for python3
+#User function Template for python3
+
+class Solution:
+    def get_min_max(self, arr):
+       arr.sort()
+       l=len(arr)
+       a=arr[l-1]
+       b=arr[0]
+       return(b,a)

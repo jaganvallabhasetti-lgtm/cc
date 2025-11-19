@@ -1,0 +1,12 @@
+class Solution:
+    def getSecondLargest(self, arr):
+        # Code Here
+        my_set=set(arr)
+        new_arr=list(my_set)
+        new_arr.sort()
+        l=len(new_arr)
+        if l>=2:
+            result=new_arr[l-2]
+        else:
+            result=-1
+        return result

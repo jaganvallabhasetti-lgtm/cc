@@ -1,0 +1,12 @@
+class Solution:
+    def findDuplicates(self, arr):
+        # code here
+      result = []
+      freq = {}
+      for ele in arr:
+        freq[ele] = freq.get(ele, 0) + 1
+      for ele, count in freq.items():
+         if count > 1:
+            result.append(ele)
+
+      return sorted(result)

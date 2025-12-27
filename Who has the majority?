@@ -1,0 +1,21 @@
+class Solution:
+    def moreFrequent(self, arr, x, y):
+        #code here
+        xcount=0
+        ycount=0
+        for ele in arr:
+            if ele==x:
+                xcount+=1
+            if ele==y:
+                ycount+=1
+            if xcount>ycount:
+                result=x
+                
+            elif xcount==ycount:
+                if x<y:
+                    result=x
+                else:
+                    result=y
+            else:
+                result=y
+        return result
